@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoDoa - Seja Voluntário</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <a href="index.html">
+      <img src="img/logo.png" alt="Logo" class="logo">
+    </a>
+    <nav>
+      <a href="quem-somos.html">Quem Somos</a>
+      <a href="seja-voluntario.html">Seja Voluntário</a>
+      <a href="quero-doar.html" class="botao-doar">Quero doar</a>
+    </nav>
+  </header>
+
+  <main class="voluntario-container">
+    <section class="voluntario-card">
+      <div class="voluntario-texto">
+        <h1>
+          COMO SER<br />
+          <span class="verde">VOLUNTÁRIO?</span>
+        </h1>
+      </div>
+
+      <!-- Formulário funcional com FormSubmit -->
+      <form class="voluntario-form" action="https://formsubmit.co/SEUEMAIL@gmail.com" method="POST">
+        <p class="form-description">Inscreva-se no formulário abaixo para ser um voluntário!</p>
+
+        <input type="text" name="nome" placeholder="Informe o seu nome" required />
+        <input type="email" name="email" placeholder="Informe o seu e-mail" required />
+        <input type="tel" name="telefone" placeholder="Informe um número para contato" required />
+
+        <!-- Esconde CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Redireciona após o envio -->
+        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
